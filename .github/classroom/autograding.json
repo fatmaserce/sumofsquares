@@ -1,0 +1,28 @@
+{
+  "tests": [
+    {
+      "name": "Zero and negative input (2 pts)",
+      "run": "javac -cp lib/junit-platform-console-standalone.jar -d out $(find src -name \"*.java\") && java -jar lib/junit-platform-console-standalone.jar -cp out --select-method edu.classroom.AssignmentTest#testZeroAndNegative",
+      "timeout": 15,
+      "points": 2
+    },
+    {
+      "name": "Small numbers (2 pts)",
+      "run": "javac -cp lib/junit-platform-console-standalone.jar -d out $(find src -name \"*.java\") && java -jar lib/junit-platform-console-standalone.jar -cp out --select-method edu.classroom.AssignmentTest#testSmallNumbers",
+      "timeout": 15,
+      "points": 2
+    },
+    {
+      "name": "Medium number (2 pts)",
+      "run": "javac -cp lib/junit-platform-console-standalone.jar -d out $(find src -name \"*.java\") && java -jar lib/junit-platform-console-standalone.jar -cp out --select-method edu.classroom.AssignmentTest#testMediumNumber",
+      "timeout": 15,
+      "points": 2
+    },
+    {
+      "name": "Larger number (2 pts)",
+      "run": "javac -cp lib/junit-platform-console-standalone.jar -d out $(find src -name \"*.java\") && java -jar lib/junit-platform-console-standalone.jar -cp out --select-method edu.classroom.AssignmentTest#testLargerNumber",
+      "timeout": 20,
+      "points": 2
+    }
+  ]
+}
